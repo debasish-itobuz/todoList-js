@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  background-color: azure;
+  width: 60%;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.taskBox {
+  background-color: azure !important;
+  max-width: 100%;
+  border-radius: 10rem;
+  overflow-x: auto;
+}
+
+.input-text {
+  min-width: 10rem;
+  max-width: 20rem;
+  overflow: auto;
+}
+
+.line-through {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+#add-btn,
+.completeTask,
+.deleteTask,
+.editTask {
+  cursor: pointer;
+}
+
+.wrapper {
+  max-height: 30rem;
+  overflow: auto;
+}
+
+@media (min-width: 768px) {
+  .input-text {
+    min-width: 20rem;
+  }
+}
